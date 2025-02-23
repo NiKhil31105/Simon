@@ -50,7 +50,7 @@ function nextSequence() {
 }
 
 function playSound(name) {
-  var audio = new Audio("sounds/" + name + ".mp3");
+  var audio = new Audio(name + ".mp3");
   audio.play();
 }
 
@@ -69,7 +69,7 @@ function CheckAnswer(currentlevel){
         }
     }
     else{
-        audio1=new Audio("sounds/wrong.mp3");
+        audio1=new Audio("wrong.mp3");
         audio1.play();
         $("body").addClass("game-over");
         $("h1").text("Game Over, Press Any Key to Restart")
